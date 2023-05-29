@@ -1,7 +1,7 @@
 def search_word(text, target_word):
     if len(text) < len(target_word):
         return False
-    if text == target_word:
+    if target_word in text:
         return True
     else:
         mid = len(text) // 2
